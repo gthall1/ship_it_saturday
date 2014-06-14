@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<htmL>
+	<head>
+		<title> Griff's Webpage </title>
+		<center><h1>Griff's Page</h1></center>
+		<style>
+      #map_canvas {
+        width: 400px;
+        height: 400px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+		  function initialize() {
+		  	var map_canvas = document.getElementById('map_canvas');
+		    var map_options = {
+		      center: new google.maps.LatLng(33.2065, -87.5346),
+		      zoom: 18,
+		      mapTypeId: google.maps.MapTypeId.ROADMAP
+		    }
+		    var map = new google.maps.Map(map_canvas, map_options)
+
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(33.210923,-87.564616),
+          map: map,
+          title: "Moe's Original"
+        });
+
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(33.210958,-87.553887),
+          map: map,
+          title: "Rounders"
+        });
+
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(33.210671,-87.552299),
+          map: map,
+          title: "Gallettes"
+        });
+
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(33.207942,-87.56453),
+          map: map,
+          title: "The Alcove"
+        });
+
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(33.209163,-87.566891),
+          map: map,
+          title: "Five"
+        });
+
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(33.21121,-87.56732),
+          map: map,
+          title: "4th & 23rd"
+        });
+
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(33.210994,-87.554574),
+          map: map,
+          title: "The Red Shed"
+        });
+	}
+
+		  google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+	</head>
+
+	<body bgcolor="#696969">
+		<center><img src="jacksonhike.jpg" width="550" height="550" /></center>
+		<h3><center> About Me </center></h3>
+		<p style="font-size: 20px; PADDING-LEFT: 105px; PADDING-RIGHT: 105px">  Hi, my name is Griff Hall and I am applying to be in Launch Academy's summer cohort.  I am currently employed in the sales and marketing department for Vail Resorts, Inc.  I am passionate about technology and using it as a tool to make a difference in this world.  I have tried many different learning resources to try to learn on my own, but I am now ready to leave my current career and pursue programming full time.  I think that Launch Academy's reputation as a top development program speaks for itself, and I want to not only be a part of the program, but eventually a part of the Boston developer community as well.  I really want to attend Launch Academy to learn programming skills from the best, but I also want to learn other skills to help me become an all-around developer such as interview skills, paired-programming skills, and insights into the developer and start-up comminities.  I know it will be a lot of hard work but I know it will be exciting and rewarding, and I am ready to be fully dedicated to becoming the best developer that I can be.
+		</p>
+		<ul style="font-size: 20px; text-align:center; PADDING-TOP 105px; PADDING-BOTTOM: 145px">
+		  <li> <a href="http://www.techcrunch.com"> Tech Crunch </a> </li>
+		  <li> <a href="http://www.tetongravity.com/"> Teton Gravity Research </a> </li>
+		  <li> <a href="https://news.ycombinator.com/"> Hacker News </a> </li>
+		</ul>
+
+    <div id="map_canvas"></div>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
